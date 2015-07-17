@@ -1,0 +1,4 @@
+##Dungeons of Kithgard
+## This is a simple 2 movement solution
+self.moveDown()
+self.moveRight()

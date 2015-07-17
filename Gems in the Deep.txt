@@ -1,0 +1,8 @@
+## Gems in the Deep
+
+# Grab all the gems using your movement commands.
+## Notice line 7 in parenthesis I put a 2. This indicates I want that done twice in a row. It helps to shorten the code.
+self.moveRight()
+self.moveDown()
+self.moveUp(2)
+self.moveRight()

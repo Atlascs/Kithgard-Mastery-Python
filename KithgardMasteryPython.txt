@@ -1,0 +1,67 @@
+## This is My Kithgard Mastery Python Solution 
+
+# Reach the end of the maze using move commands
+
+## First step is pretty easy, simply write your code using the move commands to navigate your champion to the end of the maze.
+
+# Count how many gems you pick up, and then say the current count when near a fireball trap to disable it.
+
+## The second step is a bit harder and will require you to increment a variable and then "say" the current value at the right time.
+
+# The raven at the start will give you a password. Say the password near a door to open it.
+
+## Third is easy it's shown right on the screen, you just need to repeat it back near a door.
+
+# Kill ogres when you get near them.
+
+## This is simple combat but ti happens within a loop statement. So the nearest enemy needs to be redefined on the second loop. 
+
+# You can use a loop to repeat all of the instructions as needed.
+
+# If you beat this level, you can skip to the Forest World!
+
+## You could, but coding is awesome finish the dungeon!
+
+
+
+############################################
+## First define a variable gems and set it equal to 0 (your starting amount before going through the dungeon)
+
+gems = 0
+
+#		Next start your "loop" and navigate the maze (you only need to do half and let the loop repeat).
+
+loop:
+    self.moveRight()
+    self.moveUp()
+    self.moveUp()
+    ogre = self.findNearestEnemy()
+    if ogre:
+        self.attack(ogre)
+        self.attack(ogre)
+    self.moveLeft()
+    self.moveUp()
+    self.moveUp()
+    self.moveRight()
+    self.moveRight()
+	gem = self.findNearestItem()
+		if gem:
+		self.moveUp()
+			
+## You have just acquired a gem so you are no longer at 0. now add 1 to it.
+    gems = gems + 1
+    self.moveDown()
+    self.moveRight()
+    self.moveDown()
+    self.moveDown()
+## Time to disable the trap by telling them how many gems we currently have
+    self.say(gems)
+    self.moveDown()
+    self.moveDown()
+	
+## This is the password the raven gave us on the lower left hand side of the screen.
+    self.say("Swordfish")
+    self.moveRight()
+    self.moveRight()
+	
+##You have now made it half way. Let the loop repeat and when it collects the next gem it will update the amount and by pass the trap.

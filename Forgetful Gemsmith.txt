@@ -1,0 +1,9 @@
+## Forgetful Gemsmith
+## Again simple movement, note the values I added in parenthesis. This will achieve the bonus for less than 9 lines of code.
+
+self.moveRight()
+self.moveUp()
+self.moveRight(2)
+self.moveDown(2)
+self.moveUp()
+self.moveRight()

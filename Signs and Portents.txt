@@ -1,0 +1,9 @@
+##Signs and Portents
+## This is a straight up move and stand next to the 2 people at the end. I only used movement commands. Notice that the number in the parenthesis is number to move it's a bit of a shortcut.
+self.moveRight(2)
+self.moveUp()
+self.moveRight(3)
+self.moveDown()
+self.moveRight()
+self.moveDown()
+self.moveRight()
